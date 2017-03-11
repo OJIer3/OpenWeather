@@ -23,6 +23,7 @@ import ru.zakharov.oleg.openweather.retrofit.CurrentWeatherSingleton;
 import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class FragmentWeatherForecast extends Fragment
                                   implements SwipeRefreshLayout.OnRefreshListener{
@@ -32,7 +33,7 @@ public class FragmentWeatherForecast extends Fragment
 
         private final int verticalSpaceHeight;
 
-        public VerticalSpaceItemDecoration(int verticalSpaceHeight) {
+        VerticalSpaceItemDecoration(int verticalSpaceHeight) {
             this.verticalSpaceHeight = verticalSpaceHeight;
         }
 
@@ -48,8 +49,8 @@ public class FragmentWeatherForecast extends Fragment
     private SwipeRefreshLayout swipe;
     private TextView empty;
     private Disposable forecastWeather;
-    private int lastCityId=-1;
-    private String lastCityName="";
+    private int lastCityId = -1;
+    private String lastCityName = "";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -79,7 +80,13 @@ public class FragmentWeatherForecast extends Fragment
         swipe.setOnRefreshListener(this);
 
         empty = (TextView)view.findViewById(R.id.empty);
-        if (lastCityId!=-1) loadForecastWeather();
+        if (lastCityId!=-1) {
+            swipe.setRefreshing(true);
+            recyclerView.setVisibility(View.GONE);
+            empty.setText(R.string.weather_loading);
+            empty.setVisibility(View.VISIBLE);
+            loadForecastWeather();
+        }
         return view;
     }
 
