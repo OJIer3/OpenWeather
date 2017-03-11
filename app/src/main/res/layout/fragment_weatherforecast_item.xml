@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/cardBG"
+    app:cardCornerRadius="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:background="@color/cardBG">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cardTitle"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/sunny"
+            android:drawableStart="@drawable/sunny"
+            android:gravity="center_vertical"
+            tools:text="Воскресенье, 26 фев., 12:00"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/headerBG"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="48dp"
+            android:paddingStart="48dp"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cardText"
+            tools:text="Ясно"/>
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="48dp"
+            android:paddingStart="48dp"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cardText"
+            tools:text="Температура: 0 ℃"/>
+        <TextView
+            android:id="@+id/pressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="48dp"
+            android:paddingStart="48dp"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cardText"
+            tools:text="Давление: 765 мм рт.ст."/>
+        <TextView
+            android:id="@+id/clouds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="48dp"
+            android:paddingStart="48dp"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cardText"
+            tools:text="Облачность: 25%"/>
+        <TextView
+            android:id="@+id/wind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="48dp"
+            android:paddingStart="48dp"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/cardText"
+            tools:text="Ветер: 1 м/c СВ"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

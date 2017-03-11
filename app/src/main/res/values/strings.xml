@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OpenWeather</string>
+    <string name="title_activity_weather_map">Карта погоды</string>
+    <string name="tab_map">Карта</string>
+    <string name="tab_weather">Погода</string>
+    <string name="weather_no">Данные о погоде не загружены</string>
+    <string name="weather_error">При загрузке данных произошла ошибка</string>
+    <string name="weather_loading">Загрузка данных…</string>
+    <string name="menu_google">GoogleMaps</string>
+    <string name="dialog_title_google">Условия использования</string>
+</resources>

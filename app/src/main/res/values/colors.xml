@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ffcc01</color>
+    <color name="markerBG">#6c2d1831</color>
+    <color name="headerBG">#d8303F9F</color>
+    <color name="cardBG">#d83f51b5</color>
+    <color name="cardTitle">#ffffff</color>
+    <color name="cardText">#fbe8a8</color>
+    <color name="progress1">#00b0ff</color>
+    <color name="progress2">#e91e63</color>
+    <color name="progress3">#3F51B5</color>
+</resources>
