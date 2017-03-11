@@ -23,7 +23,6 @@ import ru.zakharov.oleg.openweather.retrofit.CurrentWeatherSingleton;
 import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class FragmentWeatherForecast extends Fragment
                                   implements SwipeRefreshLayout.OnRefreshListener{
